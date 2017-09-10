@@ -1,221 +1,385 @@
-nearpy	NearPy(n_bits=16, hash_counts=15)	531.102981806	0.183302679062	0.7688
-nearpy	NearPy(n_bits=16, hash_counts=30)	564.7935009	0.339168979883	0.9218
-nearpy	NearPy(n_bits=16, hash_counts=10)	217.549901009	0.136997041941	0.6872
-ball	BallTree(leaf_size=200)	14.8917510509	0.204990267992	0.9991
-flann	FLANN(target_precision=0.200000)	432.77273488	6.12280368805e-05	0.0827
-nearpy	NearPy(n_bits=16, hash_counts=5)	125.826169968	0.082226993084	0.4888
-nearpy	NearPy(n_bits=10, hash_counts=5)	120.600458145	0.27500574708	0.6913
-nearpy	NearPy(n_bits=10, hash_counts=20)	390.584353924	1.70450822997	0.9881
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.4', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	224.706331968	0.000495820045471	0.4098
-lshf	LSHF(n_est=20, n_cand=100)	20.8467690945	0.167806580067	0.3676
-nearpy	NearPy(n_bits=14, hash_counts=5)	125.761878014	0.0930863330364	0.5253
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.1', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	223.467863798	0.000376474142075	0.1151
-flann	FLANN(target_precision=0.700000)	530.20779109	0.00016259098053	0.363
-nearpy	NearPy(n_bits=12, hash_counts=20)	390.877400875	0.793048193932	0.961
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.90', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	207.095565081	0.0055960278511	0.9215
-lshf	LSHF(n_est=10, n_cand=20)	10.652009964	0.070231123209	0.2146
-flann	FLANN(target_precision=0.800000)	541.93321991	0.000285187959671	0.5227
-ball	BallTree(leaf_size=400)	14.4584848881	0.212380226851	0.9991
-lshf	LSHF(n_est=10, n_cand=50)	10.6333839893	0.08171667099	0.2316
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.99', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	207.713097095	0.0277070889473	0.9967
-kd	KDTree(leaf_size=100)	13.7764019966	0.177999053001	0.9991
-nearpy	NearPy(n_bits=16, hash_counts=25)	478.889549017	0.334614671946	0.9047
-flann	FLANN(target_precision=0.995000)	1334.76279116	0.00826290607452	0.9736
-nearpy	NearPy(n_bits=16, hash_counts=40)	729.447154045	0.476546168089	0.9512
-panns	PANNS(n_trees=5, n_cand=20)	266.064404964	0.00285012817383	0.0946
-kd	KDTree(leaf_size=400)	12.7388458252	0.191772361994	0.9992
-flann	FLANN(target_precision=0.900000)	589.008755922	0.000612307786942	0.6987
-panns	PANNS(n_trees=10, n_cand=10)	516.833359957	0.00557668685913	0.1541
-kd	KDTree(leaf_size=200)	13.2280180454	0.182574845076	0.9994
-panns	PANNS(n_trees=40, n_cand=100)	1981.980021	0.0222560348511	0.3923
-kd	KDTree(leaf_size=20)	14.298746109	0.179616871119	0.9994
-kd	KDTree(leaf_size=1000)	11.7274918556	0.206125035048	0.9992
-kd	KDTree(leaf_size=10)	14.6378471851	0.210010768175	0.9994
-panns	PANNS(n_trees=20, n_cand=100)	998.189437151	0.0111668510437	0.2594
-nearpy	NearPy(n_bits=12, hash_counts=10)	209.484170914	0.490909857988	0.8531
-panns	PANNS(n_trees=10, n_cand=50)	504.218450069	0.00566807103157	0.1541
-ball	BallTree(leaf_size=1000)	12.8735249043	0.217653893948	0.9991
-ball	BallTree(leaf_size=40)	15.3402929306	0.183048201084	0.9992
-nearpy	NearPy(n_bits=14, hash_counts=40)	723.631652832	0.684805747032	0.9769
-ball	BallTree(leaf_size=10)	16.1670720577	0.166169774055	0.9995
-nearpy	NearPy(n_bits=10, hash_counts=40)	739.83682394	2.17663236904	0.9925
-panns	PANNS(n_trees=10, n_cand=100)	502.628528118	0.00569901490211	0.1541
-nearpy	NearPy(n_bits=12, hash_counts=40)	1303.33962011	1.41990844893	0.9918
-nearpy	NearPy(n_bits=12, hash_counts=5)	118.842249155	0.28697923398	0.6751
-flann	FLANN(target_precision=0.990000)	1075.56540585	0.00510156702995	0.95
-nearpy	NearPy(n_bits=10, hash_counts=10)	358.838041067	0.738464977026	0.9167
-nearpy	NearPy(n_bits=14, hash_counts=10)	216.80143404	0.222487774134	0.7601
-flann	FLANN(target_precision=0.500000)	489.273319006	9.33439731598e-05	0.1952
-ball	BallTree(leaf_size=100)	15.0922131538	0.195702626944	0.9992
-ball	BallTree(leaf_size=20)	15.8600242138	0.175170825005	0.999
-flann	FLANN(target_precision=0.980000)	1053.30152512	0.00455048680305	0.9393
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.5', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	212.214786053	0.000578562021255	0.5149
-flann	FLANN(target_precision=0.970000)	961.801454067	0.00337902593613	0.9195
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.85', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	220.553524017	0.00379275298119	0.8889
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.95', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	207.453109026	0.0103714878559	0.9725
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.97', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	211.786215067	0.0149191870689	0.9857
-kd	KDTree(leaf_size=40)	14.0237321854	0.171256314039	0.9991
-nearpy	NearPy(n_bits=16, hash_counts=20)	682.047178984	0.223897819996	0.8398
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.3', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	233.008436918	0.000438169002533	0.3092
-lshf	LSHF(n_est=5, n_cand=10)	5.45137691498	0.0367681519985	0.133
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.2', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	220.668622017	0.000368770837784	0.2097
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.7', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	207.506993055	0.0012687599659	0.7231
-bruteforce	BruteForce()	0.142270088196	0.260935785055	1.0
-flann	FLANN(target_precision=0.950000)	786.573575974	0.00214302611351	0.8713
-lshf	LSHF(n_est=5, n_cand=20)	5.48360300064	0.0402210650444	0.1373
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.80', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	212.758272886	0.00230198597908	0.8267
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.6', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	213.406830072	0.000830610990524	0.6238
-nearpy	NearPy(n_bits=14, hash_counts=20)	407.74545598	0.444274955988	0.9181
-annoy	Annoy(n_trees=100, search_k=10000)	199.134823084	0.000313734507561	0.96325
-annoy	Annoy(n_trees=100, search_k=2000)	197.4170928	9.82594966888e-05	0.83634
-kgraph	KGraph(euclidean,P=60)	136.221108913	0.000152646279335	0.99323
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=120'])	263.82002902	4.9477314949e-05	0.96076
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=50'])	172.786927938	3.30942869186e-05	0.69778
-annoy	Annoy(n_trees=200, search_k=1000)	393.562762022	8.54235887527e-05	0.75677
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=20'])	1206.10935712	4.20214176178e-05	0.96437
-BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.950000'])	89.7571461201	0.00185731639862	0.97067
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.300000', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	216.962994814	8.45561981201e-05	0.30305
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=100'])	1199.69604707	0.000127360200882	0.99785
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=80'])	1196.77737188	0.000107507491112	0.997
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=40'])	968.987560987	4.81782913208e-05	0.97885
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=50'])	348.280441046	3.94978046417e-05	0.94252
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=40'])	346.229537964	3.73997926712e-05	0.92458
-SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=10', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=50', 'initSearchAttempts=1'])	405.825453043	0.000104514598846	0.93033
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.700000', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	205.329567194	0.000272938799858	0.72964
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=20'])	349.183897972	3.36359024048e-05	0.84744
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=50'])	979.17747283	5.58041095734e-05	0.98568
-kgraph	KGraph(euclidean,P=40)	7.71520781517	0.000136484408379	0.98893
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=1'])	173.198422194	2.01761960983e-05	0.05371
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.970000', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	202.30724287	0.00325522301197	0.98838
-SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=20', 'initSearchAttempts=1'])	258.310944796	4.69955921173e-05	0.691
-kgraph	KGraph(euclidean,P=3)	7.16479706764	0.000134634590149	0.9341
-kgraph	KGraph(euclidean,P=1)	2.25600409508	0.000130183386803	0.89588
-annoy	Annoy(n_trees=100, search_k=100)	198.332438946	3.41533899307e-05	0.35593
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=20'])	265.412896872	3.22828054428e-05	0.7729
-kgraph	KGraph(euclidean,P=80)	2.24126601219	0.000176470184326	0.99535
-kgraph	KGraph(euclidean,P=70)	2.24643492699	0.000164528894424	0.99457
-annoy	Annoy(n_trees=100, search_k=200000)	197.176328897	0.00374370009899	0.99876
-SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=10', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=10', 'initSearchAttempts=1'])	405.964142084	4.65372085571e-05	0.73934
-SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=10', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=30', 'initSearchAttempts=1'])	407.062929869	7.90127038956e-05	0.88677
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=120'])	1196.65313506	0.000149338698387	0.99844
-annoy	Annoy(n_trees=200, search_k=100000)	394.83207202	0.0020071862936	0.99766
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=140'])	1208.90535593	0.000168161916733	0.99863
-annoy	Annoy(n_trees=200, search_k=10000)	399.102517843	0.000331206297874	0.96469
-SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=5', 'initSearchAttempts=1'])	258.225428104	3.29006910324e-05	0.41472
-BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.800000'])	81.6416788101	0.000763595509529	0.86396
-kgraph	KGraph(euclidean,P=10)	6.52849197388	0.000137577605247	0.96009
-SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=2', 'initSearchAttempts=1'])	260.478101015	3.0175614357e-05	0.24708
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=70'])	351.584299088	4.42239046097e-05	0.96358
-bruteforce-blas	BruteForceBLAS()	0.770576000214	0.0238273864031	1.0
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=70'])	970.769429922	7.070748806e-05	0.99243
-kgraph	KGraph(euclidean,P=5)	2.27941608429	0.000133938789368	0.92806
-annoy	Annoy(n_trees=100, search_k=4000)	197.875622988	0.000154512691498	0.90734
-annoy	Annoy(n_trees=200, search_k=200000)	395.853041887	0.00357871520519	0.99857
-kgraph	KGraph(euclidean,P=20)	3.86546301842	0.000141152310371	0.97707
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=5'])	978.965260983	3.1894993782e-05	0.75916
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=10'])	173.107770205	2.49306917191e-05	0.3666
-BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.990000'])	130.927351952	0.00297633378506	0.99202
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=5'])	348.905483007	2.83272027969e-05	0.58306
-kgraph	KGraph(euclidean,P=30)	2.24378108978	0.000138052415848	0.98502
-annoy	Annoy(n_trees=200, search_k=20000)	400.361819983	0.00056550989151	0.98497
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=30'])	1205.86907911	5.24005889893e-05	0.98153
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=70'])	265.094670773	3.93251895905e-05	0.92665
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=200'])	974.512809038	0.000165637803078	0.99855
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.900000', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	196.145275116	0.00117144780159	0.93106
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=5'])	173.472410917	2.37686157227e-05	0.2283
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=400'])	969.998081923	0.000306955885887	0.99897
-annoy	Annoy(n_trees=200, search_k=400)	397.998456955	6.06207132339e-05	0.60268
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=10'])	977.197070122	3.42146873474e-05	0.86743
-BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.600000'])	69.941822052	0.000310593509674	0.69217
-bruteforce0(nmslib)	Nmslib(method_name=seq_search, method_param=['copyMem=0'])	5.45190501213	0.0379848408937	0.99897
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=2'])	974.177027941	2.91953086853e-05	0.57386
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=80'])	349.732406855	4.81428861618e-05	0.96968
-kgraph	KGraph(euclidean,P=4)	6.33059382439	0.00013552210331	0.93236
-BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.300000'])	72.5502860546	8.59191179276e-05	0.4286
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.990000', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	200.551640987	0.00604072880745	0.99711
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=200'])	1202.47941303	0.000230132699013	0.9989
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.500000', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	219.96175909	0.000129034304619	0.52103
-kgraph	KGraph(euclidean,P=50)	2.27910399437	0.000145099902153	0.9918
-BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.900000'])	124.7421	0.00129011180401	0.94034
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=300'])	1209.33531618	0.000321722912788	0.99898
-BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.850000'])	94.9967558384	0.000935591816902	0.89824
-SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=10', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=400', 'initSearchAttempts=1'])	408.563683033	0.000482744312286	0.9962
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=15'])	976.825767994	3.61725091934e-05	0.91452
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=120'])	349.18787694	6.45410060883e-05	0.98366
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=30'])	351.810433865	3.57704877853e-05	0.89675
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.800000', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	196.098433018	0.000488690018654	0.82737
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=30'])	171.11479497	3.08906078339e-05	0.60114
-SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=10', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=15', 'initSearchAttempts=1'])	403.750299931	5.43497085571e-05	0.8013
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=10'])	351.050534964	3.13107967377e-05	0.73049
-annoy	Annoy(n_trees=200, search_k=100)	400.567908049	4.45909023285e-05	0.37626
-annoy	Annoy(n_trees=200, search_k=2000)	399.964169979	0.000118486881256	0.84785
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=90'])	265.37708807	4.20121908188e-05	0.9436
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=15'])	348.484318018	3.27033042908e-05	0.80323
-annoy	Annoy(n_trees=200, search_k=4000)	399.248136044	0.000175515699387	0.9142
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.850000', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	210.90057683	0.000792039203644	0.89475
-SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=30', 'initSearchAttempts=1'])	258.306765079	5.16800880432e-05	0.75995
-SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=4', 'initSearchAttempts=1'])	256.884582043	3.17555189133e-05	0.36954
-SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=10', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=20', 'initSearchAttempts=1'])	404.11532402	6.3711309433e-05	0.84021
-SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=25', 'initSearchAttempts=1'])	258.821334124	4.92555141449e-05	0.72866
-SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=10', 'initSearchAttempts=1'])	257.20882988	3.60551118851e-05	0.56056
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=1'])	348.496719837	2.37266778946e-05	0.21834
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=70'])	1190.08347106	9.58278894424e-05	0.99616
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=1'])	263.853976011	2.31121063232e-05	0.14821
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.600000', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	215.241061926	0.000176936507225	0.62402
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=30'])	264.820611954	3.36600065231e-05	0.83554
-kgraph	KGraph(euclidean,P=2)	6.13034796715	0.000125740504265	0.83695
-kgraph	KGraph(euclidean,P=90)	2.2656390667	0.000189047503471	0.99609
-annoy	Annoy(n_trees=200, search_k=40000)	397.939116001	0.000964625406265	0.99349
-annoy	Annoy(n_trees=200, search_k=400000)	399.790281057	0.00642255420685	0.99891
-SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=15', 'initSearchAttempts=1'])	260.028860092	4.16552782059e-05	0.63632
-BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.400000'])	75.6097340584	0.000144567203522	0.53265
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=2'])	263.211479187	2.42562055588e-05	0.28319
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=400'])	1191.30550504	0.000414536309242	0.99898
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=50'])	1204.96333003	7.41107940674e-05	0.993
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=160'])	1208.97491908	0.000189781308174	0.99876
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=2'])	349.744313955	2.49554872513e-05	0.37545
-BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.700000'])	80.4120788574	0.00047499499321	0.77659
-SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=10', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=100', 'initSearchAttempts=1'])	409.901844978	0.000163719391823	0.96958
-SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=1', 'initSearchAttempts=1'])	256.775477171	2.83682107925e-05	0.1589
-annoy	Annoy(n_trees=200, search_k=200)	401.378530979	5.15333175659e-05	0.48219
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=30'])	966.044210911	4.15689229965e-05	0.96594
-BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.970000'])	109.069242001	0.00224954791069	0.98005
-kgraph	KGraph(euclidean,P=100)	6.70782613754	0.000202152109146	0.99655
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.200000', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	206.486565113	7.18147039413e-05	0.20216
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=120'])	174.187824965	3.91294956207e-05	0.83001
-annoy	Annoy(n_trees=100, search_k=1000)	200.047096014	6.60629034042e-05	0.73513
-SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=10', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=800', 'initSearchAttempts=1'])	410.533321857	0.000882363295555	0.99824
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=5'])	266.067348003	2.57307052612e-05	0.47811
-BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.500000'])	100.788778067	0.00024895401001	0.58381
-BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.100000'])	59.9042601585	3.00813913345e-05	0.19666
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=70'])	173.440985918	3.52716207504e-05	0.7546
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.950000', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	205.303915977	0.00210406041145	0.9762
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=90'])	173.506379843	3.62020015717e-05	0.79116
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=2'])	172.527038097	2.40870952606e-05	0.11264
-SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=10', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=200', 'initSearchAttempts=1'])	408.377127171	0.00027245259285	0.98907
-annoy	Annoy(n_trees=100, search_k=40000)	199.266355038	0.000972876095772	0.99337
-annoy	Annoy(n_trees=100, search_k=400000)	199.441104174	0.0066807902813	0.99893
-annoy	Annoy(n_trees=100, search_k=100000)	197.298820019	0.00208464341164	0.99788
-SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=3', 'initSearchAttempts=1'])	257.713465929	3.13187122345e-05	0.31201
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.100000', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	220.008764982	7.66194105148e-05	0.11709
-annoy	Annoy(n_trees=100, search_k=20000)	197.526563883	0.000550914382935	0.98343
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=60'])	1196.11353397	8.52421998978e-05	0.99498
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=20'])	174.825819016	2.86549091339e-05	0.50254
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=20'])	968.161678791	3.78233909607e-05	0.94082
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=50'])	266.170027018	3.68640899658e-05	0.89553
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=120'])	960.959571123	0.0001078592062	0.99722
-annoy	Annoy(n_trees=100, search_k=400)	197.365159988	4.29464101791e-05	0.58003
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=160'])	264.011411905	6.17213964462e-05	0.97385
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=90'])	1191.94152308	0.000118051815033	0.99756
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=40'])	1203.65881395	6.33434057236e-05	0.98898
-MP-lsh(lshkit)	Nmslib(method_name=lsh_multiprobe, method_param=['desiredRecall=0.400000', 'H=1200001', 'T=10', 'L=50', 'tuneK=10'])	208.470700979	9.06489849091e-05	0.38904
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=80'])	960.897700071	7.93927907944e-05	0.9942
-hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=10'])	264.649839878	2.90378093719e-05	0.64026
-annoy	Annoy(n_trees=100, search_k=200)	198.950153112	3.6795091629e-05	0.46133
-BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.200000'])	100.111802101	4.5482301712e-05	0.31015
-annoy	Annoy(n_trees=400, search_k=10000)	797.162457943	0.000386059904099	0.96731
-annoy	Annoy(n_trees=400, search_k=400)	799.219499826	9.82733011246e-05	0.62179
-annoy	Annoy(n_trees=400, search_k=200)	796.660932064	8.53567123413e-05	0.50403
-annoy	Annoy(n_trees=400, search_k=200000)	800.698988914	0.00347164378166	0.99838
-annoy	Annoy(n_trees=400, search_k=400000)	799.491427183	0.00616578412056	0.99887
-annoy	Annoy(n_trees=400, search_k=4000)	798.729888916	0.000228288507462	0.92138
+kgraph	KGraph(euclidean,P=100)	148.270051956	0.000291871213913	0.99651
+kgraph	KGraph(euclidean,P=70)	147.862824917	0.000571688294411	0.99447
+kgraph	KGraph(euclidean,P=50)	1.05313706398	0.000448812508583	0.99165
+kgraph	KGraph(euclidean,P=30)	0.594930887222	0.000326085519791	0.9849
+kgraph	KGraph(euclidean,P=40)	0.575659990311	0.000383007788658	0.98887
+kgraph	KGraph(euclidean,P=10)	0.572855949402	0.000201867508888	0.95986
+kgraph	KGraph(euclidean,P=1)	0.571895837784	0.000148270797729	0.89473
+kgraph	KGraph(euclidean,P=90)	0.580977916718	0.000680426001549	0.99587
+kgraph	KGraph(euclidean,P=80)	0.574414014816	0.000612875890732	0.99515
+kgraph	KGraph(euclidean,P=20)	0.576394081116	0.000262770605087	0.9767
+kgraph	KGraph(euclidean,P=5)	0.571705102921	0.000177605485916	0.92792
+kgraph	KGraph(euclidean,P=4)	0.579262018204	0.000166376113892	0.933
+kgraph	KGraph(euclidean,P=3)	0.573848009109	0.000165244698524	0.9331
+kgraph	KGraph(euclidean,P=2)	0.575809001923	0.000154553484917	0.84323
+kgraph	KGraph(euclidean,P=60)	0.582534074783	0.00050932970047	0.99311
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=70'])	213.612485886	7.12408065796e-05	0.75265
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=400'])	1607.99527693	0.0012708272934	0.99909
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=400'])	1285.61708593	0.000966677498817	0.99898
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=2'])	2.95758295059	3.27978134155e-05	0.57007
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=200'])	2.95624089241	0.000536445999146	0.99858
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=30'])	332.319859028	5.63537836075e-05	0.83464
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=160'])	3.90326595306	0.000202582001686	0.97377
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=70'])	439.424607038	0.000135386705399	0.96352
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=2'])	3.27248692513	1.86949014664e-05	0.2829
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=10'])	3.55056500435	5.89644908905e-05	0.86838
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=2'])	3.97741007805	1.3773393631e-05	0.10754
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=5'])	3.79497003555	4.40104961395e-05	0.75808
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=20'])	4.41099691391	0.000117717885971	0.96439
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=100'])	3.79729819298	0.000401280212402	0.99816
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=15'])	4.26111888885	4.71069097519e-05	0.80391
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=90'])	4.293872118	0.000124724698067	0.94375
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=120'])	4.08419489861	0.000106186509132	0.82858
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=80'])	4.30819606781	0.000146152091026	0.96963
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=1'])	4.00302791595	1.09392166138e-05	0.0516
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=20'])	4.21465420723	4.44690942764e-05	0.77326
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=40'])	4.5059158802	0.000192916297913	0.98913
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=120'])	4.41008496284	0.000348843598366	0.99722
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=200'])	3.45042109489	0.000709679508209	0.99895
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=20'])	4.37444996834	8.77032995224e-05	0.94082
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=30'])	3.97497582436	4.11253929138e-05	0.59378
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=10'])	4.27114582062	3.8770198822e-05	0.73237
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=5'])	4.30633401871	2.4725985527e-05	0.47959
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=1'])	4.26491379738	1.7925286293e-05	0.21678
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=120'])	4.22771501541	0.000157721996307	0.96075
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=70'])	2.94954991341	0.000103697705269	0.92623
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=90'])	3.96637511253	8.49979162216e-05	0.7896
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=70'])	4.41192007065	0.000224598407745	0.99227
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=5'])	3.43043780327	1.78414106369e-05	0.227
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=120'])	4.28824305534	0.000206036305428	0.9835
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=50'])	2.96242308617	5.60729980469e-05	0.69541
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=50'])	4.40632200241	0.000229332494736	0.99302
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=10'])	2.95529413223	2.30480909348e-05	0.36239
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=1'])	4.24896192551	1.48831129074e-05	0.14895
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=80'])	4.42775797844	0.000335389590263	0.99721
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=40'])	4.39329695702	0.000143840885162	0.97892
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=40'])	4.2651078701	8.58639001846e-05	0.92439
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=140'])	3.30513501167	0.000529388403893	0.99881
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=2'])	3.61432409286	2.27326869965e-05	0.3772
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=4', 'post=0', 'efConstruction=400'], query_param=['ef=20'])	3.97030806541	3.22300195694e-05	0.50869
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=70'])	4.51584887505	0.000301600384712	0.9963
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=20'])	3.5411169529	5.62592029572e-05	0.84711
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=50'])	3.34674286842	0.000100359010696	0.94224
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=15'])	4.36036801338	7.34899997711e-05	0.91582
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=80'])	3.6289229393	0.000250031614304	0.99413
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=5'])	3.64534187317	2.98810958862e-05	0.5856
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=10'])	4.22457408905	3.16306114197e-05	0.63777
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=30'])	2.95483803749	0.000116827988625	0.96587
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=120'])	4.40969491005	0.000465507817268	0.99861
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=160'])	4.01555800438	0.000591437792778	0.99882
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=12', 'post=0', 'efConstruction=400'], query_param=['ef=30'])	4.30639886856	7.06430196762e-05	0.89792
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=30'])	2.98456001282	0.000156353497505	0.98152
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=60'])	3.09834098816	0.000264749598503	0.99519
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=90'])	3.07496094704	0.000368814015388	0.99776
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=20', 'post=2', 'efConstruction=400'], query_param=['ef=50'])	4.35445213318	0.000171286797523	0.98562
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=32', 'post=2', 'efConstruction=400'], query_param=['ef=300'])	2.99615907669	0.000996599698067	0.99909
+hnsw(nmslib)	Nmslib(method_name=hnsw, index_param=['M=8', 'post=0', 'efConstruction=400'], query_param=['ef=50'])	4.23236083984	7.92673826218e-05	0.89578
+SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=4', 'initSearchAttempts=1'])	289.573971033	6.90881967545e-05	0.36603
+SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=1', 'initSearchAttempts=1'])	5.85006904602	5.78975915909e-05	0.15481
+SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=10', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=30', 'initSearchAttempts=1'])	458.287107944	0.000226376104355	0.88671
+SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=20', 'initSearchAttempts=1'])	5.83244895935	0.000136311101913	0.69046
+SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=10', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=800', 'initSearchAttempts=1'])	7.13782215118	0.00304456021786	0.99836
+SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=5', 'initSearchAttempts=1'])	5.81467986107	8.46104860306e-05	0.41183
+SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=30', 'initSearchAttempts=1'])	5.7868039608	0.000168805909157	0.76082
+SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=10', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=100', 'initSearchAttempts=1'])	7.07657003403	0.00057810049057	0.96932
+SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=10', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=400', 'initSearchAttempts=1'])	7.11355304718	0.00177284240723	0.99636
+SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=25', 'initSearchAttempts=1'])	5.79153895378	0.000150709295273	0.7303
+SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=10', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=200', 'initSearchAttempts=1'])	7.10562300682	0.00096936788559	0.98925
+SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=10', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=50', 'initSearchAttempts=1'])	7.09643101692	0.000355567908287	0.93084
+SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=3', 'initSearchAttempts=1'])	5.8478770256	7.53603935242e-05	0.31109
+SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=10', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=15', 'initSearchAttempts=1'])	7.0710477829	0.000185480999947	0.80271
+SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=2', 'initSearchAttempts=1'])	5.77687096596	6.65946006775e-05	0.24373
+SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=15', 'initSearchAttempts=1'])	5.80236792564	0.000120192098618	0.63756
+SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=10', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=20', 'initSearchAttempts=1'])	7.0847029686	0.000212182593346	0.84037
+SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=5', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=10', 'initSearchAttempts=1'])	5.7732899189	0.000102581095695	0.55796
+SW-graph(nmslib)	Nmslib(method_name=sw-graph, index_param=['NN=10', 'efConstruction=400', 'initIndexAttempts=1'], query_param=['efSearch=10', 'initSearchAttempts=1'])	7.08297801018	0.000160946583748	0.74089
+BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.850000'])	116.577571869	0.00292905590534	0.90383
+BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.800000'])	132.599567175	0.00227208890915	0.86505
+BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.500000'])	88.9118058681	0.000624712705612	0.5962
+BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.200000'])	70.0501089096	0.000146484899521	0.31775
+BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.300000'])	106.149843931	0.000262947297096	0.43752
+BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.400000'])	125.830930948	0.000422876000404	0.50226
+BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.600000'])	89.7851848602	0.000979380393028	0.69863
+BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.990000'])	228.466132164	0.00893317170143	0.99387
+BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.700000'])	106.483890057	0.00160591111183	0.76748
+BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.100000'])	99.435808897	6.18660926819e-05	0.1882
+BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.970000'])	184.573175907	0.00644453840256	0.9816
+BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.950000'])	153.104701996	0.00537360458374	0.97137
+BallTree(nmslib)	Nmslib(method_name=vptree, method_param=['tuneK=10', 'desiredRecall=0.900000'])	156.18123889	0.00385381798744	0.94031
+flann	FLANN(target_precision=0.700000)	450.511761904	0.000222394108772	0.40665
+flann	FLANN(target_precision=0.800000)	465.686611176	0.000369995498657	0.54172
+flann	FLANN(target_precision=0.980000)	905.663197041	0.00339860970974	0.96127
+flann	FLANN(target_precision=0.200000)	373.735653162	7.64368057251e-05	0.08335
+flann	FLANN(target_precision=0.950000)	672.191820145	0.00233779408932	0.88191
+flann	FLANN(target_precision=0.990000)	943.810052156	0.00456201250553	0.97155
+flann	FLANN(target_precision=0.500000)	432.559035778	0.000121773600578	0.22788
+flann	FLANN(target_precision=0.970000)	782.646100044	0.00254963657856	0.91824
+flann	FLANN(target_precision=0.900000)	579.313066006	0.000966779303551	0.76523
+flann	FLANN(target_precision=0.995000)	966.306626081	0.00551522638798	0.97037
+annoy	Annoy(n_trees=100, search_k=40000)	288.914624929	0.00430824029446	0.99375
+annoy	Annoy(n_trees=100, search_k=100)	302.035436153	0.000137911987305	0.35797
+annoy	Annoy(n_trees=200, search_k=100)	609.555649042	0.000238914203644	0.37364
+annoy	Annoy(n_trees=100, search_k=10000)	286.63914299	0.00140732731819	0.96273
+annoy	Annoy(n_trees=100, search_k=4000)	303.087610006	0.000740236091614	0.90697
+annoy	Annoy(n_trees=200, search_k=4000)	566.355156183	0.000906756711006	0.91359
+annoy	Annoy(n_trees=100, search_k=400)	301.761955023	0.000215053606033	0.5826
+annoy	Annoy(n_trees=100, search_k=2000)	284.129242182	0.000486980986595	0.83449
+annoy	Annoy(n_trees=100, search_k=200)	290.234113932	0.000166408205032	0.46221
+annoy	Annoy(n_trees=100, search_k=1000)	308.259767056	0.000327679896355	0.73409
+annoy	Annoy(n_trees=200, search_k=400000)	580.927627802	0.0308957444906	0.99896
+annoy	Annoy(n_trees=100, search_k=100000)	302.415004015	0.00942897121906	0.99772
+annoy	Annoy(n_trees=200, search_k=400)	609.552305937	0.000327305197716	0.60168
+annoy	Annoy(n_trees=200, search_k=2000)	622.462862015	0.000624972295761	0.85009
+annoy	Annoy(n_trees=200, search_k=20000)	607.3847332	0.002502917099	0.98445
+annoy	Annoy(n_trees=200, search_k=200)	619.257420778	0.000273030591011	0.4855
+annoy	Annoy(n_trees=100, search_k=20000)	299.049418926	0.00242878568172	0.9841
+annoy	Annoy(n_trees=200, search_k=1000)	591.41564393	0.000442309594154	0.7548
+annoy	Annoy(n_trees=200, search_k=200000)	584.271563053	0.016567931509	0.99867
+annoy	Annoy(n_trees=100, search_k=200000)	294.005723953	0.0172162222862	0.99859
+annoy	Annoy(n_trees=200, search_k=100000)	624.580857992	0.00919855349064	0.99761
+annoy	Annoy(n_trees=200, search_k=40000)	576.222663879	0.00437315058708	0.993
+annoy	Annoy(n_trees=200, search_k=10000)	615.597465038	0.00156869151592	0.96548
+annoy	Annoy(n_trees=100, search_k=400000)	295.143054008	0.0321381059885	0.99895
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=3, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=online)	220.323894024	8.14942836761e-05	0.24452
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=1, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=online)	5.19752502441e-05	4.46204900742e-05	0.14633
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=1, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=online)	4.6968460083e-05	4.80020999908e-05	0.14633
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=3, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=online)	4.48226928711e-05	0.000246562314034	0.31479
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=1, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=online)	4.91142272949e-05	0.000102648901939	0.14633
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=3, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=online)	4.48226928711e-05	9.09840106964e-05	0.28353
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=5, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	741.683099985	0.000106129002571	0.32473
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=198, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	6.69956207275e-05	0.00215548818111	0.78036
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=198, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	5.41210174561e-05	0.00650096340179	0.95873
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=10, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	5.79357147217e-05	0.000562385296822	0.57679
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=198, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	6.103515625e-05	0.00236091971397	0.87803
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=3, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	6.00814819336e-05	7.76008844376e-05	0.26635
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=34, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	6.41345977783e-05	0.001528215909	0.79025
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=357, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	6.60419464111e-05	0.00369290449619	0.85224
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=18, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	6.19888305664e-05	0.000305082011223	0.58549
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=1156, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	6.5803527832e-05	0.0300520976067	0.99655
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=642, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	6.00814819336e-05	0.0062110891819	0.90138
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=1, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	5.81741333008e-05	9.64562177658e-05	0.16414
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=10, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	5.91278076172e-05	0.000170166897774	0.4029
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=110, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	8.20159912109e-05	0.00140687630177	0.82273
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=5, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	5.91278076172e-05	0.000325871419907	0.43352
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=61, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	6.48498535156e-05	0.000847370314598	0.75433
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=357, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	5.69820404053e-05	0.00402455070019	0.92145
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=34, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	5.48362731934e-05	0.00044414229393	0.56155
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=1156, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	5.31673431396e-05	0.0110914746046	0.97292
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=357, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	5.3882598877e-05	0.0107770972013	0.98061
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=34, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	5.69820404053e-05	0.000509633207321	0.679
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=1, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	5.3882598877e-05	4.26299095154e-05	0.16414
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=110, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	5.79357147217e-05	0.00124610409737	0.70222
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=642, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	5.10215759277e-05	0.00673472909927	0.95225
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=5, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	5.10215759277e-05	0.000120621609688	0.38722
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=18, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	6.19888305664e-05	0.000916353797913	0.68745
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=61, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	5.79357147217e-05	0.00248934400082	0.86534
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=10, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	6.103515625e-05	0.000196672701836	0.49351
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=1156, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	6.19888305664e-05	0.0104885804892	0.93788
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=61, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	6.103515625e-05	0.000738409018517	0.63189
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=3, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	5.60283660889e-05	8.56785058975e-05	0.30905
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=642, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	5.69820404053e-05	0.0176840847969	0.99162
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=18, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	5.91278076172e-05	0.00026313791275	0.47502
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=110, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	5.50746917725e-05	0.00401882719994	0.9216
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=1, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	5.29289245605e-05	4.5437502861e-05	0.16414
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=1, min_leaves=3, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	5.3882598877e-05	0.00021727669239	0.33248
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=642, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	1256.15155578	0.011967196703	0.98981
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=198, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	6.41345977783e-05	0.0125694491148	0.99035
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=1, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	6.38961791992e-05	0.00018868060112	0.27488
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=18, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	6.50882720947e-05	0.00180041799545	0.83842
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=10, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	6.19888305664e-05	0.000368573904037	0.67115
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=1, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	5.98430633545e-05	8.36735963821e-05	0.27488
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=198, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	6.19888305664e-05	0.0038203166008	0.90316
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=1, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	7.10487365723e-05	7.94661998749e-05	0.27488
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=110, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	9.20295715332e-05	0.00798258090019	0.97741
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=357, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	6.00814819336e-05	0.00627508020401	0.93946
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=34, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	7.31945037842e-05	0.00304918830395	0.90966
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=198, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	6.98566436768e-05	0.00445404849052	0.96119
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=3, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	6.48498535156e-05	0.000160030984879	0.46691
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=3, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	6.31809234619e-05	0.00014185628891	0.41881
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=642, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	6.5803527832e-05	0.0356585679054	0.99836
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=61, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	6.48498535156e-05	0.00484335889816	0.95235
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=34, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	6.48498535156e-05	0.000978857898712	0.83756
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=10, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	6.91413879395e-05	0.000313672614098	0.5842
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=357, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	6.50882720947e-05	0.00726144478321	0.97961
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=642, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	5.69820404053e-05	0.0104282526016	0.96061
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=5, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	6.98566436768e-05	0.000223638105392	0.55577
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=18, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	6.19888305664e-05	0.000578615283966	0.7576
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=1156, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	6.38961791992e-05	0.0201547940969	0.99488
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=61, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	5.79357147217e-05	0.00135519418716	0.80216
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=1156, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	6.103515625e-05	0.0174824088097	0.97431
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=34, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	5.88893890381e-05	0.00083155040741	0.74107
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=18, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	6.50882720947e-05	0.000492358803749	0.66025
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=5, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	6.103515625e-05	0.000194465017319	0.49278
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=5, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	6.19888305664e-05	0.000640026187897	0.61344
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=1156, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	5.57899475098e-05	0.0582430150986	0.99895
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=357, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	6.60419464111e-05	0.0203344172955	0.99595
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=3, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	6.103515625e-05	0.000430322098732	0.49991
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=10, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	6.103515625e-05	0.00111844508648	0.74719
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=110, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	6.69956207275e-05	0.00263318181038	0.93392
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=61, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	6.38961791992e-05	0.00158753871918	0.89246
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=2, min_leaves=110, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	6.79492950439e-05	0.00229320809841	0.85476
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=110, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	1745.10028195	0.0112693979025	0.99003
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=10, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	7.00950622559e-05	0.000448672604561	0.6833
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=34, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	5.10215759277e-05	0.00138518180847	0.89939
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=357, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	4.6968460083e-05	0.0101744242907	0.99166
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=357, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	4.88758087158e-05	0.00845624480247	0.96257
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=1, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	5.10215759277e-05	0.000120823407173	0.35688
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=642, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	4.79221343994e-05	0.0136936417103	0.97449
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=642, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	4.79221343994e-05	0.0163818416119	0.99616
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=34, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	4.91142272949e-05	0.00443314299583	0.94995
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=5, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	4.88758087158e-05	0.00027748298645	0.59257
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=357, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	4.88758087158e-05	0.0305672432899	0.99807
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=198, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	4.50611114502e-05	0.0189026011944	0.99602
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=1, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	4.50611114502e-05	0.000280374908447	0.35688
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=61, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	5.3882598877e-05	0.00709713850021	0.97578
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=3, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	4.79221343994e-05	0.000628793501854	0.59995
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=5, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	5.07831573486e-05	0.000945543408394	0.70861
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=1156, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	5.29289245605e-05	0.0220586411953	0.98285
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=34, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	4.91142272949e-05	0.00121239688396	0.82294
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=18, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	5.00679016113e-05	0.000858010911942	0.83731
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=642, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	5.00679016113e-05	0.0490445511103	0.99886
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=18, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	4.81605529785e-05	0.000695481300354	0.75583
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=10, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	4.60147857666e-05	0.000528128504753	0.76173
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=1156, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	5.10215759277e-05	0.0830938260078	0.99905
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=110, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	4.6968460083e-05	0.00368342430592	0.96651
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=198, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	4.60147857666e-05	0.0050870497942	0.94184
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=61, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	5.50746917725e-05	0.0019062969923	0.87124
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=5, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	4.6968460083e-05	0.000321852397919	0.65539
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=3, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	4.38690185547e-05	0.000227436089516	0.56691
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=1, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	5.19752502441e-05	0.000113735294342	0.35688
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=18, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	4.79221343994e-05	0.00268528130054	0.90077
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=61, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	4.60147857666e-05	0.00225447769165	0.9401
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=110, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	5.69820404053e-05	0.00309911768436	0.90864
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=3, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	4.38690185547e-05	0.000201199412346	0.51652
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=198, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	4.50611114502e-05	0.00609952530861	0.98277
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=1156, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	4.88758087158e-05	0.0264686366081	0.99798
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=3, min_leaves=10, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	4.19616699219e-05	0.00166424019337	0.8291
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=4, min_leaves=61, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	2340.595222	0.00295268700123	0.96145
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=4, min_leaves=198, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	7.41481781006e-05	0.0245900899172	0.99746
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=15, min_leaves=3, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=none)	699.974339008	0.00324550471306	0.88275
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=15, min_leaves=1, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=none)	698.258094072	0.000558110404015	0.65613
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=15, min_leaves=3, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=none)	6.79492950439e-05	0.00112388100624	0.8446
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=15, min_leaves=1, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=none)	2.28881835938e-05	0.00137101330757	0.65613
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=15, min_leaves=1, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=none)	3.2901763916e-05	0.000577360510826	0.65613
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=15, min_leaves=3, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=none)	2.38418579102e-05	0.000959397292137	0.81756
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=34, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=online)	2729.89405894	0.00351855638027	0.96021
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=5, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=online)	4.79221343994e-05	0.00344302139282	0.90927
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=3, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=online)	4.19616699219e-05	0.00228592078686	0.84468
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=61, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=online)	3.31401824951e-05	0.0249408532143	0.99698
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=1, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=online)	5.3882598877e-05	0.000983264493942	0.62298
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=5, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=online)	4.19616699219e-05	0.000877256011963	0.84067
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=34, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=online)	5.19752502441e-05	0.0157162023067	0.99287
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=10, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=online)	4.19616699219e-05	0.00172892780304	0.93553
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=10, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=online)	4.19616699219e-05	0.00141563918591	0.89816
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=18, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=online)	3.31401824951e-05	0.00270140879154	0.96474
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=18, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=online)	4.29153442383e-05	0.00217498729229	0.93293
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=1, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=online)	2.50339508057e-05	0.000374241518974	0.62298
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=3, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=online)	5.29289245605e-05	0.000753184509277	0.81673
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=3, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=online)	4.29153442383e-05	0.00064357919693	0.78275
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=61, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=online)	4.31537628174e-05	0.00547265470028	0.97548
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=5, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=online)	4.50611114502e-05	0.00104113810062	0.87857
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=1, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=online)	4.29153442383e-05	0.000387108516693	0.62298
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=10, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=online)	4.31537628174e-05	0.00573461120129	0.95941
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=18, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=online)	3.19480895996e-05	0.00919304618835	0.98152
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=61, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=online)	4.79221343994e-05	0.00676206929684	0.99212
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=10, min_leaves=34, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=online)	5.41210174561e-05	0.00430486328602	0.98303
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=5, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=none)	601.09134388	0.00426656060219	0.92674
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=61, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=none)	3.79085540771e-05	0.0289991076946	0.99802
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=1, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=none)	5.29289245605e-05	0.000478286600113	0.62069
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=18, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=none)	2.21729278564e-05	0.0107852472067	0.98775
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=10, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=none)	3.40938568115e-05	0.00665748951435	0.97107
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=10, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=none)	3.40938568115e-05	0.00213307979107	0.94003
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=34, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=none)	2.31266021729e-05	0.00543264729977	0.9863
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=1, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=none)	2.31266021729e-05	0.00105045819283	0.62069
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=18, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=none)	3.19480895996e-05	0.00275347349644	0.94415
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=34, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=none)	3.31401824951e-05	0.00444666819572	0.96925
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=61, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=none)	2.40802764893e-05	0.00694114871025	0.98228
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=61, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=none)	2.47955322266e-05	0.00849746608734	0.99382
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=10, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=none)	3.2901763916e-05	0.00178007390499	0.91055
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=18, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=none)	3.2901763916e-05	0.0032681789875	0.9694
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=34, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=none)	2.40802764893e-05	0.0170668949127	0.99535
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=5, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=none)	3.50475311279e-05	0.00126552510262	0.88158
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=1, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=none)	2.40802764893e-05	0.000433993506432	0.62069
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=5, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=none)	3.21865081787e-05	0.00109183142185	0.8499
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=3, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=none)	2.50339508057e-05	0.00245937728882	0.86499
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=3, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=none)	2.19345092773e-05	0.000882728695869	0.81935
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=3, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=none)	3.2901763916e-05	0.000781680607796	0.78991
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=3, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=none)	626.962030172	0.00101430621147	0.83382
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=3, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=none)	3.38554382324e-05	0.000874657607079	0.80585
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=10, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=none)	2.50339508057e-05	0.00760914700031	0.9731
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=34, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=none)	2.40802764893e-05	0.00590918791294	0.98775
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=5, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=none)	2.50339508057e-05	0.00142242081165	0.8919
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=18, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=none)	2.38418579102e-05	0.0118309033871	0.98888
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=34, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=none)	2.40802764893e-05	0.00476870679855	0.97198
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=61, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=none)	2.40802764893e-05	0.0295072073936	0.99791
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=34, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=none)	3.50475311279e-05	0.0183112746954	0.9956
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=1, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=none)	3.91006469727e-05	0.000463586783409	0.63975
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=1, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=none)	2.31266021729e-05	0.000491030883789	0.63975
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=3, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=none)	2.40802764893e-05	0.00265106840134	0.87465
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=1, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=none)	2.31266021729e-05	0.00111536910534	0.63975
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=5, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=none)	2.31266021729e-05	0.00116038899422	0.86322
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=5, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=none)	2.40802764893e-05	0.00398375110626	0.93199
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=10, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=none)	3.50475311279e-05	0.00225029230118	0.94576
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=61, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=none)	2.28881835938e-05	0.00903340559006	0.99428
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=10, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=none)	3.40938568115e-05	0.001894987607	0.91741
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=18, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=none)	2.40802764893e-05	0.00348807349205	0.97248
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=61, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=none)	2.40802764893e-05	0.00733605060577	0.98413
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=14, min_leaves=18, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=none)	2.50339508057e-05	0.00289845368862	0.9489
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=10, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=online)	3202.59018993	0.00168297379017	0.92292
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=18, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=online)	4.48226928711e-05	0.00321433880329	0.97547
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=10, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=online)	4.10079956055e-05	0.00209409480095	0.95286
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=34, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=online)	4.60147857666e-05	0.0196620588779	0.99549
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=18, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=online)	5.69820404053e-05	0.0119151860952	0.98774
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=5, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=online)	5.69820404053e-05	0.00106726579666	0.87615
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=10, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=online)	2.09808349609e-05	0.00744881119728	0.97144
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=3, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=online)	4.2200088501e-05	0.000785203909874	0.82859
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=1, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=online)	2.09808349609e-05	0.00048913269043	0.68333
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=34, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=online)	4.10079956055e-05	0.00410535740852	0.9693
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=5, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=online)	4.10079956055e-05	0.00427517969608	0.93234
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=61, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=online)	4.19616699219e-05	0.00804906179905	0.99448
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=1, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=online)	4.6968460083e-05	0.00121699881554	0.68333
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=34, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=online)	3.19480895996e-05	0.00514931159019	0.98803
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=3, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=online)	4.29153442383e-05	0.000914149808884	0.85724
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=61, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=online)	4.10079956055e-05	0.0292778452158	0.9978
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=5, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=online)	3.60012054443e-05	0.0012531252861	0.90707
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=61, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=online)	4.19616699219e-05	0.00625883409977	0.98025
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=3, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=online)	2.38418579102e-05	0.00278163731098	0.87984
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=1, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=online)	2.59876251221e-05	0.000462295603752	0.68333
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=0.100000, remove_dups=False, num_trees=13, min_leaves=18, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=online)	2.50339508057e-05	0.00260363209248	0.9499
+kforest	KForest(max_leaf_size=64, branch_factor=16, spill=-1.000000, remove_dups=False, num_trees=1, min_leaves=1, exact_eps=64.000000, search_type=1, rand_seed=5, enforce_type=full)	6162.87514687	0.000724127602577	0.53963
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=110, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	1306.78457999	0.00201589939594	0.74812
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=5, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	2.8133392334e-05	0.000195941019058	0.30203
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=61, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	3.38554382324e-05	0.00110942220688	0.66699
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=110, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	3.50475311279e-05	0.00317771658897	0.87274
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=198, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	5.48362731934e-05	0.00562023460865	0.92884
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=1156, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	3.79085540771e-05	0.022323680687	0.93401
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=198, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	2.59876251221e-05	0.00344489319324	0.73535
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=198, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	2.59876251221e-05	0.0034725055933	0.81729
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=642, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	2.59876251221e-05	0.015318481493	0.98344
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=18, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	5.60283660889e-05	0.000310149383545	0.40542
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=1156, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	2.50339508057e-05	0.0180501827955	0.95502
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=61, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	2.69412994385e-05	0.00160713410378	0.79205
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=5, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	2.40802764893e-05	0.000131297111511	0.306
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=18, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	2.31266021729e-05	0.000591516304016	0.55889
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=10, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	2.40802764893e-05	0.000228693604469	0.39995
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=3, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	2.38418579102e-05	8.36064100266e-05	0.21068
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=1156, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	2.38418579102e-05	0.0275110104084	0.99217
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=3, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	3.40938568115e-05	0.0001217689991	0.22723
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=10, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	2.40802764893e-05	0.000331832814217	0.4333
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=1, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	2.40802764893e-05	5.59098005295e-05	0.12509
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=5, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	2.28881835938e-05	0.000106587386131	0.2604
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=110, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	5.29289245605e-05	0.00152818238735	0.6535
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=642, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	4.31537628174e-05	0.00894103019238	0.92112
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=642, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	2.59876251221e-05	0.00893094241619	0.87877
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=34, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	4.91142272949e-05	0.000875181484222	0.68957
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=61, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	5.10215759277e-05	0.000868826889992	0.56934
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=34, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	2.40802764893e-05	0.000554472899437	0.58271
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=357, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	5.19752502441e-05	0.00493626058102	0.87585
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=34, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	4.41074371338e-05	0.000540005898476	0.48923
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=357, exact_eps=0.000000, search_type=5, rand_seed=5, enforce_type=full)	2.28881835938e-05	0.00968915550709	0.9644
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=3, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	2.59876251221e-05	8.60774993896e-05	0.24156
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=18, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	2.31266021729e-05	0.000358643603325	0.48736
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=10, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	2.31266021729e-05	0.000197745800018	0.33456
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=357, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	2.38418579102e-05	0.00498501780033	0.81182
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=1, exact_eps=0.000000, search_type=3, rand_seed=5, enforce_type=full)	2.50339508057e-05	3.92824888229e-05	0.12509
+kforest	KForest(max_leaf_size=64, branch_factor=4, spill=0.025000, remove_dups=False, num_trees=1, min_leaves=1, exact_eps=0.000000, search_type=4, rand_seed=5, enforce_type=full)	4.29153442383e-05	3.69464874268e-05	0.12509

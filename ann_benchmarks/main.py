@@ -1,16 +1,17 @@
-import gzip, numpy, time, os, multiprocessing, argparse, pickle, resource, random, math
+#import gzip, numpy, time, os, multiprocessing, argparse, pickle, resource, random, math
+import gzip, numpy, time, os, argparse, pickle, resource, random, math
 try:
     from urllib import urlretrieve
 except ImportError:
     from urllib.request import urlretrieve # Python 3
 import sklearn.preprocessing
 
-# Set resource limits to prevent memory bombs
-memory_limit = 12 * 2**30
-soft, hard = resource.getrlimit(resource.RLIMIT_DATA)
-if soft == resource.RLIM_INFINITY or soft >= memory_limit:
-    print('resetting memory limit from', soft, 'to', memory_limit)
-    resource.setrlimit(resource.RLIMIT_DATA, (memory_limit, hard))
+## Set resource limits to prevent memory bombs
+#memory_limit = 12 * 2**30
+#soft, hard = resource.getrlimit(resource.RLIMIT_DATA)
+#if soft == resource.RLIM_INFINITY or soft >= memory_limit:
+#    print('resetting memory limit from', soft, 'to', memory_limit)
+#    resource.setrlimit(resource.RLIMIT_DATA, (memory_limit, hard))
 
 # Nmslib specific code
 # Remove old indices stored on disk
@@ -391,14 +392,90 @@ class BruteForceBLAS(BaseANN):
         indices = numpy.argpartition(dists, n)[:n]  # partition-sort by distance, get `n` closest
         return sorted(indices, key=lambda index: dists[index])  # sort `n` closest into correct order
 
+KForest_cache = None
+KForest_enforce_type = None
+class KForestIndex(BaseANN):
+    def __init__(self, max_leaf_size, branch_factor, spill, num_trees, min_leaves, exact_eps, search_type, rand_seed, enforce_type):
+        from inspect import getargspec
+        for i in getargspec(self.__init__).args[1:]:
+            setattr(self, '_'+i, vars()[i])
 
+        self._remove_dups = False
+        self.enforce_type = self._enforce_type
+        del self._enforce_type
+        self.name = 'KForest(max_leaf_size=%d, branch_factor=%d, spill=%f, remove_dups=False, num_trees=%d, min_leaves=%d, exact_eps=%f, search_type=%d, rand_seed=%d, enforce_type=%s)'%(max_leaf_size, branch_factor, spill, num_trees, min_leaves, exact_eps, search_type, rand_seed, enforce_type)
+
+    def isclose(self, a, b, rel_tol=1e-09, abs_tol=0.0):
+        return abs(a-b) <= max(rel_tol * max(abs(a), abs(b)), abs_tol)
+
+    def match_cache(self):
+        global KForest_cache, KForest_enforce_type
+        cache = KForest_cache
+        if cache is None:
+            return False
+        tests = [
+            self._dim == cache.get_dim(),
+            self._memory_size == cache.get_memory_size(),
+            self._max_leaf_size == cache.get_max_leaf_size(),
+            self._branch_factor == cache.get_branch_factor(),
+            self.isclose(self._spill, cache.get_spill()),
+            self._num_trees == cache.get_num_trees(),
+            self.enforce_type == KForest_enforce_type,
+        ]
+        return all(tests)
+
+    def build_tree(self, X):
+        import vqtree, math, sys
+        global KForest_cache, KForest_enforce_type
+
+        args = {k[1:]:v for k,v in self.__dict__.items() if k[0] == '_'}
+        KForest_cache = vqtree.KForest(**args)
+        forest = KForest_cache
+
+        for row in X:
+            forest.add(row, -1)
+            if forest.size() % 1000 == 0:
+                sys.stdout.write('\rbuild: %d|\r'%forest.size())
+                sys.stdout.flush()
+            if self.enforce_type == 'online' or self.enforce_type == 'full':
+                for i in range(10): #range(int(math.sqrt(forest.size()))):
+                    forest.enforce_tree_consistency_random()
+        if self.enforce_type == 'full':
+            print '\n'
+            print 'consistency %s' % forest.enforce_tree_consistency_full()
+        KForest_enforce_type = self.enforce_type
+
+    def fit(self, X):
+        self._memory_size, self._dim = X.shape
+        if not self.match_cache():
+            self.build_tree(X)
+
+        global KForest_cache, KForest_enforce_type
+        forest = KForest_cache
+
+        forest.set_min_leaves(self._min_leaves)
+        forest.set_exact_eps(self._exact_eps)
+        forest.set_search_type(self._search_type)
+
+    def query(self, v, n):
+        global KForest_cache
+        return KForest_cache.neighbors(v, n)[2]
+
+X_train_cache, X_test_cache = None, None
 def get_dataset(which='glove', limit=-1, random_state = 3, test_size = 10000):
+    global X_train_cache, X_test_cache
+    if X_train_cache is not None and X_test_cache is not None:
+        return X_train_cache, X_test_cache
+
     cache = 'queries/%s-%d-%d-%d.npz' % (which, test_size, limit, random_state)
     if os.path.exists(cache):
         v = numpy.load(cache)
         X_train = v['train']
         X_test = v['test']
-        print(X_train.shape, X_test.shape)
+        print X_train.shape, X_test.shape
+
+        X_train_cache, X_test_cache = X_train, X_test
+
         return X_train, X_test
     local_fn = os.path.join('install', which)
     if os.path.exists(local_fn + '.gz'):
@@ -406,14 +483,20 @@ def get_dataset(which='glove', limit=-1, random_state = 3, test_size = 10000):
     else:
         f = open(local_fn + '.txt')
 
-    X = []
+    #X = []
+    if limit == -1:
+        X = numpy.zeros((1000000, 128))
+    else:
+        X = numpy.zeros((min(1000000,limit), 128))
     for i, line in enumerate(f):
-        v = [float(x) for x in line.strip().split()]
-        X.append(v)
+        for j, txt in enumerate(line.strip().split()):
+            X[i,j] = float(txt)
+        #v = [float(x) for x in line.strip().split()]
+        #X.append(v)
         if limit != -1 and len(X) == limit:
             break
 
-    X = numpy.vstack(X)
+    #X = numpy.vstack(X)
     import sklearn.cross_validation
 
     # Here Erik is most welcome to use any other random_state
@@ -422,22 +505,26 @@ def get_dataset(which='glove', limit=-1, random_state = 3, test_size = 10000):
     X_train, X_test = sklearn.cross_validation.train_test_split(X, test_size=test_size, random_state=random_state)
     X_train = X_train.astype(numpy.float)
     X_test = X_test.astype(numpy.float)
-    print(X_train.shape, X_test.shape)
+    print X_train.shape, X_test.shape
     numpy.savez(cache, train=X_train, test=X_test)
+
+    X_train_cache, X_test_cache = X_train, X_test
+
     return X_train, X_test
 
 
 def run_algo(args, library, algo, results_fn):
-    pool = multiprocessing.Pool()
-    X_train, X_test = pool.apply(get_dataset, [args.dataset, args.limit])
-    pool.close()
-    pool.join()
+    #pool = multiprocessing.Pool()
+    #X_train, X_test = pool.apply(get_dataset, [args.dataset, args.limit])
+    #pool.close()
+    #pool.join()
+    X_train, X_test = get_dataset(args.dataset, args.limit)
 
     t0 = time.time()
     if algo != 'bf':
         algo.fit(X_train)
     build_time = time.time() - t0
-    print('Built index in', build_time)
+    print 'Built index in', build_time
 
     best_search_time = float('inf')
     best_precision = 0.0 # should be deterministic but paranoid
@@ -447,7 +534,8 @@ def run_algo(args, library, algo, results_fn):
             v, correct = t
             found = algo.query(v, 10)
             return len(set(found).intersection(correct))
-        if algo.use_threads():
+        if algo.use_threads() and False:
+            print "This shouldn't happen..."
             pool = multiprocessing.pool.ThreadPool()
             results = pool.map(single_query, queries)
         else:
@@ -458,7 +546,7 @@ def run_algo(args, library, algo, results_fn):
         precision = k / (len(queries) * 10)
         best_search_time = min(best_search_time, search_time)
         best_precision = max(best_precision, precision)
-        print(search_time, precision)
+        print search_time, precision
 
     output = [library, algo.name, build_time, best_search_time, best_precision]
     print(output)
@@ -474,6 +562,7 @@ def get_queries(args):
     bf = BruteForceBLAS(args.distance)
     X_train, X_test = get_dataset(which=args.dataset, limit=args.limit)
 
+
     # Prepare queries
     bf.fit(X_train)
     queries = []
@@ -481,11 +570,11 @@ def get_queries(args):
         correct = bf.query(x, 10)
         queries.append((x, correct))
         if len(queries) % 100 == 0:
-            print(len(queries), '...')
+            print len(queries), '...'
 
     return queries
             
-def get_algos(m, save_index):
+def get_algos(m, save_index, args):
     algos = {
         'lshf': [LSHF(m, 5, 10), LSHF(m, 5, 20), LSHF(m, 10, 20), LSHF(m, 10, 50), LSHF(m, 20, 100)],
         'flann': [FLANN(m, 0.2), FLANN(m, 0.5), FLANN(m, 0.7), FLANN(m, 0.8), FLANN(m, 0.9), FLANN(m, 0.95), FLANN(m, 0.97), FLANN(m, 0.98), FLANN(m, 0.99), FLANN(m, 0.995)],
@@ -521,6 +610,17 @@ def get_algos(m, save_index):
         kgraph_preset ={'reverse':-1};
         kgraph_Ps = [1,2,3,4,5,10,20,30,40,50,60,70,80,90,100]
         algos['kgraph'] = [KGraph(m, P, kgraph_preset, save_index) for P in kgraph_Ps]
+
+        import vqtree
+        algos['kforest'] = []
+        for kforest_leaf in [int(1.8**i) for i in range(1,13)]:
+        #for kforest_leaf in [int(1.8**i) for i in range(1,8)]:
+            for kforest_search in [vqtree.SEARCH_PLANE_DIST, vqtree.SEARCH_PROT_DIST, vqtree.SEARCH_LEAFGRAPH]:
+                #algos['kforest'].append(KForestIndex(max_leaf_size=64, branch_factor=16, spill=0.1, num_trees=int(args.kforest_num_trees), min_leaves=kforest_leaf, exact_eps=0., search_type=kforest_search, rand_seed=5, enforce_type=args.kforest_enforce_type))
+                algos['kforest'].append(KForestIndex(max_leaf_size=64, branch_factor=4, spill=0.025, num_trees=int(args.kforest_num_trees), min_leaves=kforest_leaf, exact_eps=0., search_type=kforest_search, rand_seed=5, enforce_type=args.kforest_enforce_type))
+
+        #for kforest_eps in [4.**i for i in range(6,-3,-1)]:
+        #    algos['kforest'].append(KForestIndex(max_leaf_size=64, branch_factor=16, spill=-1, num_trees=int(args.kforest_num_trees), min_leaves=1, exact_eps=kforest_eps, search_type=vqtree.SEARCH_EXACT, rand_seed=5, enforce_type=args.kforest_enforce_type))
 
         # nmslib algorithms
         # Only works for euclidean distance
@@ -619,12 +719,15 @@ if __name__ == '__main__':
     parser.add_argument('--algo', help='run only this algorithm', default=None)
     parser.add_argument('--no_save_index', help='Do not save indices', action='store_true')
 
+    parser.add_argument('--kforest_num_trees', help='Do not save indices', action=None)
+    parser.add_argument('--kforest_enforce_type', help='Do not save indices', action=None)
+
     args = parser.parse_args()
 
     results_fn = get_fn('results', args)
     queries_fn = get_fn('queries', args)
 
-    print('storing queries in', queries_fn, 'and results in', results_fn)
+    print 'storing queries in', queries_fn, 'and results in', results_fn
 
     if not os.path.exists(queries_fn):
         queries = get_queries(args)
@@ -634,7 +737,7 @@ if __name__ == '__main__':
     else:
         queries = pickle.load(open(queries_fn))
 
-    print('got', len(queries), 'queries')
+    print 'got', len(queries), 'queries'
 
     algos_already_ran = set()
     if os.path.exists(results_fn):
@@ -642,10 +745,10 @@ if __name__ == '__main__':
             library, algo_name = line.strip().split('\t')[:2]
             algos_already_ran.add((library, algo_name))
 
-    algos = get_algos(args.distance, not args.no_save_index)
+    algos = get_algos(args.distance, not args.no_save_index, args)
 
     if args.algo:
-        print('running only', args.algo)
+        print 'running only', args.algo
         algos = {args.algo: algos[args.algo]}
 
     algos_flat = []
@@ -657,11 +760,12 @@ if __name__ == '__main__':
                 
     random.shuffle(algos_flat)
 
-    print('order:', [a.name for l, a in algos_flat])
+    print 'order:', [a.name for l, a in algos_flat]
 
     for library, algo in algos_flat:
-        print(algo.name, '...')
+        print algo.name, '...'
         # Spawn a subprocess to force the memory to be reclaimed at the end
-        p = multiprocessing.Process(target=run_algo, args=(args, library, algo, results_fn))
-        p.start()
-        p.join()
+        run_algo(args, library, algo, results_fn)
+        #p = multiprocessing.Process(target=run_algo, args=(args, library, algo, results_fn))
+        #p.start()
+        #p.join()
